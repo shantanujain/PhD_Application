@@ -28,7 +28,7 @@ function validate()
 	}
 	if(document.app.gender.value=="male") {
 		alert("Select PhD Stream");
-		document.app.stream.focus();
+		document.app.gender.focus();
 		return false;
 	}
 	//alert("hello, world!");
@@ -87,4 +87,5 @@ function validate()
 	<input type="text" name="pin" required/>
 	<br><br>
    <button type="submit">Submit</button>
+   
 </form>

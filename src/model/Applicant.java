@@ -16,6 +16,10 @@ import java.util.Random;
 
 public class Applicant implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//Personal Information
 	private String e_id;
 	private String email;

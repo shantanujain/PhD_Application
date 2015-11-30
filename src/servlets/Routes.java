@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import controller.ApplicantController;
+
 /**
  * Servlet implementation class Routes
  */
@@ -16,6 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 public class Routes extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	RequestDispatcher rd;
+	
+	ApplicantController ac = new ApplicantController();
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -51,6 +55,11 @@ public class Routes extends HttpServlet {
 			request.setAttribute("view", "./../views/old.jsp");
 		}
 		
+		if(request.getRequestURI().equals("/Project/success")) {
+			request.setAttribute("title", "Success");
+			request.setAttribute("view", "./../views/success.jsp");
+		}
+		
 		render(request, response);
 	}
 
@@ -63,6 +72,9 @@ public class Routes extends HttpServlet {
 		if (request.getRequestURI().equals("/Project/new")) {
 			request.setAttribute("title", "New App");
 			request.setAttribute("view", "./../views/application.jsp");
+			ac.newApplicant(request, response);
+			request.setAttribute("title", "Complete!");
+			request.setAttribute("view", "./../views/success.jsp");
 		}
 		
 		render(request, response);
