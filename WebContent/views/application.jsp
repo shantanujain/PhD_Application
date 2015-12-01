@@ -270,7 +270,7 @@ function validate()
 	<br><br>
 	
 	Xth Marks(%):
-	<input type="number" name="xmarks" required/>
+	<input type="number" name="xmarks" step="0.01" required/>
 	<br><br>
 	
 	Year of Passing Xth:
@@ -282,7 +282,7 @@ function validate()
 	<br><br>
 	</div>
 	XIIth Marks(%):
-	<input type="number" name="xiimarks" required/>
+	<input type="number" name="xiimarks" step="0.01" required/>
 	<br><br>
 	
 	Year of Passing XIIth:
@@ -321,14 +321,14 @@ function validate()
 	
 	CGPA or Marks:
 	<input type="radio" name="cgpa" value="gpa" checked>CGPA 
-	<input type="number" name="gcgpa" />
+	<input type="number" name="gcgpa" step="0.01" />
 	<select name="total">
 		<option value="4">4</option>
 		<option value="10">10</option>
 	</select>
 	
 	<input type="radio" name="cgpa" value="marks">Marks
-	<input type="number" name="gmarks" />
+	<input type="number" name="gmarks" step="0.01" />
 	<br><br>
 	
 	<input type="checkbox" name="ece" id="eceCheck" value="ecephd" onclick="displayECE()">Are you applying for ECE PhD?
@@ -367,7 +367,7 @@ function validate()
 		<br/><br/>
 		Preference 3:
 		<select name="ecepref3">
-			<<option value="Advanced Signal Processing">Advanced Signal Processing</option>
+			<option value="Advanced Signal Processing">Advanced Signal Processing</option>
 			<option value="Statistical Signal Processing">Statistical Signal Processing</option>
 			<option value="Digital VLSI Design">Digital VLSI Design</option>
 			<option value="Analog CMOS Design">Analog CMOS Design</option>
@@ -432,12 +432,12 @@ function validate()
 		
 		CGPA or Marks:
 		<input type="radio" name="pgcgpa" value="pggpa" checked>CGPA 
-		<input type="number" name="pgcgpa">
+		<input type="number" name="pgcgpa" step="0.01">
 		<select name="total1">
 			<option value="4">4</option>
 			<option value="10">10</option>
 		</select>
-		<input type="radio" name="pgcgpa" value="marks">Marks
+		<input type="radio" name="pgcgpa" value="marks" step="0.01">Marks
 		<input type="number" name="pgmarks" />
 		<br><br>
 	</div>
@@ -460,11 +460,11 @@ function validate()
 		<br><br>
 	
 		Score:
-		<input type="text" name="oadscore"/>
+		<input type="number" name="oadscore"/>
 		<br><br>
 	
 		Rank:
-		<input type="text" name="oadrank"/>
+		<input type="number" name="oadrank"/>
 		<br><br>
 	</div>
 	
@@ -482,7 +482,7 @@ function validate()
 		<br><br>
 		
 		Marks(out of 100):
-		<input type="number" name="gatemarks"/>
+		<input type="number" name="gatemarks" step="0.01" />
 		<br><br>
 	
 		Score:
