@@ -38,17 +38,18 @@
 		<option value=""></option>
 		<option value="Computer Science">Computer Science</option>
 		<option value="Electronics and Communication">Electronics and Communication</option>
+		<option value="Computational Biology">Computational Biology</option>
 	</select>
 	<br><br>
 	Graduation Degree: <select name=gdegree>
 		<option value=""></option>
-		<option value="BTech">BTech</option>
+		<option value="B.Tech">B.Tech</option>
 		<option value="BSc">BSc</option>
 	</select>
 	<br><br>
 	Post Graduation Degree: <select name=pgdegree>
 		<option value=""></option>
-		<option value="MTech">MTech</option>
+		<option value="M.Tech">M.Tech</option>
 		<option value="MSc">MSc</option>
 	</select>
 	<br><br>
@@ -56,40 +57,62 @@
 		<option value=""></option>
 		<option value="CBSE">CBSE</option>
 		<option value="ICSE">ICSE</option>
+		<option value="State Board">State Board</option>
 	</select>
 	<br><br>
 	Class XII Board: <select name=XIIboard>
 		<option value=""></option>
 		<option value="CBSE">CBSE</option>
 		<option value="ICSE">ICSE</option>
+		<option value="State Board">State Board</option>
 	</select>
 	<br><br>
 	Department(Graduation): <select name=gdep>
 		<option value=""></option>
 		<option value="Computer Science">Computer Science</option>
 		<option value="Electronics and Communication">Electronics and Communication</option>
+		<option value="Information Technology">Information Technology</option>
 	</select>
 	<br><br>
 	Department(Post Graduation): <select name=pgdep>
 		<option value=""></option>
 		<option value="Computer Science">Computer Science</option>
 		<option value="Electronics and Communication">Electronics and Communication</option>
+		<option value="Information Technology">Information Technology</option>
 	</select>
 	<br><br>
-	University(Graduation): <input name="guniv">
+	University(Graduation): <input type="text" name="guniv">
 	<br><br>
-	University(Post Graduation): <input name=pguniv>
+	University(Post Graduation): <input type="text" name=pguniv>
 	<br><br>
-	State(Graduation from): <select name=gstate>
+	State(Graduation from): 
+	<select name=gstate>
 		<option value=""></option>
 		<option value="Delhi">Delhi</option>
 		<option value="Mumbai">Mumbai</option>
+		<option value="Andhra Pradesh">Andhra Pradesh</option>
+		<option value="Jharkhand">Jharkhan</option>
+		<option value="Karnataka">Karnataka</option>
+		<option value="Madhya Pradesh">Madhya Pradesh</option>
+		<option value="Maharashtra">Maharashtra</option>
+		<option value="Tamil Nadu">Tamil Nadu</option>
+		<option value="Uttar Pradesh">Uttar Pradesh</option>
+		<option value="West Bengal">West Bengal</option>
 	</select>
 	<br><br>
-	State(Post Graduation from): <select name=pgstate>
+	State(Post Graduation from): 
+	<select name=pgstate>
 		<option value=""></option>
 		<option value="Delhi">Delhi</option>
 		<option value="Mumbai">Mumbai</option>
+		<option value="Andhra Pradesh">Andhra Pradesh</option>
+		<option value="Jharkhand">Jharkhan</option>
+		<option value="Karnataka">Karnataka</option>
+		<option value="Madhya Pradesh">Madhya Pradesh</option>
+		<option value="Maharashtra">Maharashtra</option>
+		<option value="Tamil Nadu">Tamil Nadu</option>
+		<option value="Uttar Pradesh">Uttar Pradesh</option>
+		<option value="West Bengal">West Bengal</option>
 	</select>
 	<br><br>
 	Class X Board Percentage: <input type="checkbox" name= Xmarkscheck value="greater">Greater than
