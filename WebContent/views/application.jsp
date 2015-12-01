@@ -109,41 +109,134 @@ function validate()
 	<input type="number" name="mobile" required/>
 	<br><br>
 	PhD Stream:
-	<input type="radio" name="stream" value="Computer Science"> Computer Science 
+	<input type="radio" name="stream" value="Computer Science" checked> Computer Science 
 	<input type="radio" name="stream" value="Electronics and Communication"> Electronics and Communication
 	<input type="radio" name="stream" value="Computational Biology"> Computational Biology
 	<br><br>
 	<%-- Preference 1, 2, 3 --%>
 	Preference 1:
 	<select name="pref1">
-		<option value="Machine Learning">Machine Learning</option>
-		<option value="Mobile Computing">Mobile Computing</option>
+		<option value="Artificial Intelligence and Robotics">Artificial Intelligence and Robotics - CSE</option>
+		<option value="Biophysics">Biophysics - CB</option>
+		<option value="Compilers">Compilers - CSE</option>
+		<option value="Computer Architecture and Systems Design">Computer Architecture and Systems Design - ECE</option>
+		<option value="Computer Architecture and Systems Design">Computer Architecture and Systems Design - CSE</option>
+		<option value="Computer Graphics">Computer Graphics - CSE</option>
+		<option value="Computer Vision">Computer Vision - CSE</option>
+		<option value="Controls and Robotics">Controls and Robotics - ECE</option>
+		<option value="Digital and Analog VLSI Systems Design">Digital and Analog VLSI Systems Design - ECE</option>
+		<option value="Electromagnetics">Electromagnetics - ECE</option>
+		<option value="Embedded and VLSI systems design">Embedded and VLSI systems design - ECE</option>
+		<option value="Embedded Systems">Embedded Systems - ECE</option>
+		<option value="Fiber-Wireless Architectures">Fiber-Wireless Architectures - ECE</option>
+		<option value="Image Analysis and Biometrics">Image Analysis and Biometrics - CSE</option>
+		<option value="Information Management and Data Engineering">Information Management and Data Engineering - CSE</option>
+		<option value="Machine Learning">Machine Learning - CSE</option>
+		<option value="Machine Learning">Machine Learning - ECE</option>
+		<option value="Massively Parallel Systems">Massively Parallel Systems - CSE</option>
+		<option value="Mobile Computing and Networking Applications">Mobile Computing and Networking Applications - CSE</option>
+		<option value="OFDM based Optical Access Networks">OFDM based Optical Access Networks - ECE</option>
+		<option value="Optical Wireless Communication Systems">Optical Wireless Communication Systems - ECE</option>
+		<option value="Program Analysis">Program Analysis - CSE</option>
+		<option value="RF and mixed signal electronics">RF and mixed signal electronics - ECE</option>
+		<option value="Security and Privacy">Security and Privacy - CSE</option>
+		<option value="Signal and Image Processing">Signal and Image Processing - ECE</option>
+		<option value="Signal and Image Processing">Signal and Image Processing - CSE</option>
+		<option value="Software Engineering">Software Engineering - CSE</option>
+		<option value="Structural Biology">Structural Biology - CB</option>
+		<option value="Systems Biology">Systems Biology - CB</option>
+		<option value="Theoretical Computer Science">Theoretical Computer Science - CSE</option>
+		<option value="Wireless Communication">Wireless Communication - ECE</option>
+		<option value="Wireless Networks">Wireless Networks - ECE</option>
+		<option value="Wireless Networks">Wireless Networks - CSE</option>
 	</select>
 	<br><br>
 	Preference 2:
 	<select name="pref2">
-		<option value="Machine Learning">Machine Learning</option>
-		<option value="Mobile Computing">Mobile Computing</option>
+		<option value="Artificial Intelligence and Robotics">Artificial Intelligence and Robotics - CSE</option>
+		<option value="Biophysics">Biophysics - CB</option>
+		<option value="Compilers">Compilers - CSE</option>
+		<option value="Computer Architecture and Systems Design">Computer Architecture and Systems Design - ECE</option>
+		<option value="Computer Architecture and Systems Design">Computer Architecture and Systems Design - CSE</option>
+		<option value="Computer Graphics">Computer Graphics - CSE</option>
+		<option value="Computer Vision">Computer Vision - CSE</option>
+		<option value="Controls and Robotics">Controls and Robotics - ECE</option>
+		<option value="Digital and Analog VLSI Systems Design">Digital and Analog VLSI Systems Design - ECE</option>
+		<option value="Electromagnetics">Electromagnetics - ECE</option>
+		<option value="Embedded and VLSI systems design">Embedded and VLSI systems design - ECE</option>
+		<option value="Embedded Systems">Embedded Systems - ECE</option>
+		<option value="Fiber-Wireless Architectures">Fiber-Wireless Architectures - ECE</option>
+		<option value="Image Analysis and Biometrics">Image Analysis and Biometrics - CSE</option>
+		<option value="Information Management and Data Engineering">Information Management and Data Engineering - CSE</option>
+		<option value="Machine Learning">Machine Learning - CSE</option>
+		<option value="Machine Learning">Machine Learning - ECE</option>
+		<option value="Massively Parallel Systems">Massively Parallel Systems - CSE</option>
+		<option value="Mobile Computing and Networking Applications">Mobile Computing and Networking Applications - CSE</option>
+		<option value="OFDM based Optical Access Networks">OFDM based Optical Access Networks - ECE</option>
+		<option value="Optical Wireless Communication Systems">Optical Wireless Communication Systems - ECE</option>
+		<option value="Program Analysis">Program Analysis - CSE</option>
+		<option value="RF and mixed signal electronics">RF and mixed signal electronics - ECE</option>
+		<option value="Security and Privacy">Security and Privacy - CSE</option>
+		<option value="Signal and Image Processing">Signal and Image Processing - ECE</option>
+		<option value="Signal and Image Processing">Signal and Image Processing - CSE</option>
+		<option value="Software Engineering">Software Engineering - CSE</option>
+		<option value="Structural Biology">Structural Biology - CB</option>
+		<option value="Systems Biology">Systems Biology - CB</option>
+		<option value="Theoretical Computer Science">Theoretical Computer Science - CSE</option>
+		<option value="Wireless Communication">Wireless Communication - ECE</option>
+		<option value="Wireless Networks">Wireless Networks - ECE</option>
+		<option value="Wireless Networks">Wireless Networks - CSE</option>
 	</select>
 	<br><br>
 	Preference 3:
 	<select name="pref3">
-		<option value="Machine Learning">Machine Learning</option>
-		<option value="Mobile Computing">Mobile Computing</option>
+		<option value="Artificial Intelligence and Robotics">Artificial Intelligence and Robotics - CSE</option>
+		<option value="Biophysics">Biophysics - CB</option>
+		<option value="Compilers">Compilers - CSE</option>
+		<option value="Computer Architecture and Systems Design">Computer Architecture and Systems Design - ECE</option>
+		<option value="Computer Architecture and Systems Design">Computer Architecture and Systems Design - CSE</option>
+		<option value="Computer Graphics">Computer Graphics - CSE</option>
+		<option value="Computer Vision">Computer Vision - CSE</option>
+		<option value="Controls and Robotics">Controls and Robotics - ECE</option>
+		<option value="Digital and Analog VLSI Systems Design">Digital and Analog VLSI Systems Design - ECE</option>
+		<option value="Electromagnetics">Electromagnetics - ECE</option>
+		<option value="Embedded and VLSI systems design">Embedded and VLSI systems design - ECE</option>
+		<option value="Embedded Systems">Embedded Systems - ECE</option>
+		<option value="Fiber-Wireless Architectures">Fiber-Wireless Architectures - ECE</option>
+		<option value="Image Analysis and Biometrics">Image Analysis and Biometrics - CSE</option>
+		<option value="Information Management and Data Engineering">Information Management and Data Engineering - CSE</option>
+		<option value="Machine Learning">Machine Learning - CSE</option>
+		<option value="Machine Learning">Machine Learning - ECE</option>
+		<option value="Massively Parallel Systems">Massively Parallel Systems - CSE</option>
+		<option value="Mobile Computing and Networking Applications">Mobile Computing and Networking Applications - CSE</option>
+		<option value="OFDM based Optical Access Networks">OFDM based Optical Access Networks - ECE</option>
+		<option value="Optical Wireless Communication Systems">Optical Wireless Communication Systems - ECE</option>
+		<option value="Program Analysis">Program Analysis - CSE</option>
+		<option value="RF and mixed signal electronics">RF and mixed signal electronics - ECE</option>
+		<option value="Security and Privacy">Security and Privacy - CSE</option>
+		<option value="Signal and Image Processing">Signal and Image Processing - ECE</option>
+		<option value="Signal and Image Processing">Signal and Image Processing - CSE</option>
+		<option value="Software Engineering">Software Engineering - CSE</option>
+		<option value="Structural Biology">Structural Biology - CB</option>
+		<option value="Systems Biology">Systems Biology - CB</option>
+		<option value="Theoretical Computer Science">Theoretical Computer Science - CSE</option>
+		<option value="Wireless Communication">Wireless Communication - ECE</option>
+		<option value="Wireless Networks">Wireless Networks - ECE</option>
+		<option value="Wireless Networks">Wireless Networks - CSE</option>
 	</select>
 	<br><br>
 	Gender:
-	<input type="radio" name="gender" value="Male"> Male
+	<input type="radio" name="gender" value="Male" checked> Male
 	<input type="radio" name="gender" value="Female"> Female
 	<br><br>
 	Category:
-	<input type="radio" name="category" value="General"> General 
+	<input type="radio" name="category" value="General" checked> General 
 	<input type="radio" name="category" value="SC"> SC
 	<input type="radio" name="category" value="ST"> ST
 	<input type="radio" name="category" value="OBC"> OBC
 	<br><br>
 	Physically Disable:
-	<input type="radio" name="physical" value="Yes"> Yes 
+	<input type="radio" name="physical" value="Yes" checked> Yes 
 	<input type="radio" name="physical" value="No"> No
 	<br><br>
 	<%-- DOB --%>
@@ -151,7 +244,7 @@ function validate()
 	<input type="date" id="dob" name="dob" required/>
 	<br><br>
 	Children/War Widows of Defence Personnel killed/Disabled in Action:
-	<input type="radio" name="war" value="Yes"> Yes 
+	<input type="radio" name="war" value="Yes" checked> Yes 
 	<input type="radio" name="war" value="No"> No
 	<br><br>
 	Father's Name:
@@ -177,7 +270,7 @@ function validate()
 	<br><br>
 	
 	Xth Marks(%):
-	<input type="text" name="xmarks" required/>
+	<input type="number" name="xmarks" required/>
 	<br><br>
 	
 	Year of Passing Xth:
@@ -189,7 +282,7 @@ function validate()
 	<br><br>
 	</div>
 	XIIth Marks(%):
-	<input type="text" name="xiimarks" required/>
+	<input type="number" name="xiimarks" required/>
 	<br><br>
 	
 	Year of Passing XIIth:
@@ -227,7 +320,7 @@ function validate()
 	<br><br>
 	
 	CGPA or Marks:
-	<input type="radio" name="cgpa" value="gpa">CGPA 
+	<input type="radio" name="cgpa" value="gpa" checked>CGPA 
 	<input type="number" name="gcgpa" />
 	<select name="total">
 		<option value="4">4</option>
@@ -250,6 +343,11 @@ function validate()
 			<option value="Analog CMOS Design">Analog CMOS Design</option>
 			<option value="Digital Communications">Digital Communications</option>
 			<option value="Communication Networks">Communication Networks</option>
+			<option value="Linear systems">Linear systems</option>
+			<option value="Introduction to Robotics">Introduction to Robotics</option>
+			<option value="RF Circuit design">RF Circuit design</option>
+			<option value="Antennas and propagation">Antennas and propagation</option>
+			<option value="Embedded Systems">Embedded Systems</option>
 		</select>
 		<br/><br/>
 		Preference 2:
@@ -260,16 +358,26 @@ function validate()
 			<option value="Analog CMOS Design">Analog CMOS Design</option>
 			<option value="Digital Communications">Digital Communications</option>
 			<option value="Communication Networks">Communication Networks</option>
+			<option value="Linear systems">Linear systems</option>
+			<option value="Introduction to Robotics">Introduction to Robotics</option>
+			<option value="RF Circuit design">RF Circuit design</option>
+			<option value="Antennas and propagation">Antennas and propagation</option>
+			<option value="Embedded Systems">Embedded Systems</option>
 		</select>
 		<br/><br/>
 		Preference 3:
 		<select name="ecepref3">
-			<option value="Advanced Signal Processing">Advanced Signal Processing</option>
+			<<option value="Advanced Signal Processing">Advanced Signal Processing</option>
 			<option value="Statistical Signal Processing">Statistical Signal Processing</option>
 			<option value="Digital VLSI Design">Digital VLSI Design</option>
 			<option value="Analog CMOS Design">Analog CMOS Design</option>
 			<option value="Digital Communications">Digital Communications</option>
 			<option value="Communication Networks">Communication Networks</option>
+			<option value="Linear systems">Linear systems</option>
+			<option value="Introduction to Robotics">Introduction to Robotics</option>
+			<option value="RF Circuit design">RF Circuit design</option>
+			<option value="Antennas and propagation">Antennas and propagation</option>
+			<option value="Embedded Systems">Embedded Systems</option>
 		</select>
 		<br/><br/>
 		Preference 4:
@@ -280,6 +388,11 @@ function validate()
 			<option value="Analog CMOS Design">Analog CMOS Design</option>
 			<option value="Digital Communications">Digital Communications</option>
 			<option value="Communication Networks">Communication Networks</option>
+			<option value="Linear systems">Linear systems</option>
+			<option value="Introduction to Robotics">Introduction to Robotics</option>
+			<option value="RF Circuit design">RF Circuit design</option>
+			<option value="Antennas and propagation">Antennas and propagation</option>
+			<option value="Embedded Systems">Embedded Systems</option>
 		</select>
 		<br/><br/>
 	</div>
@@ -290,7 +403,7 @@ function validate()
 	<div id="pg" style="display:none">
 		<h2>Post Graduation Information</h2>
 		Name of College:
-		<input type="text" name="pgcoll" required/>
+		<input type="text" name="pgcoll"/>
 		<br><br>
 		
 		City:
@@ -314,11 +427,11 @@ function validate()
 		<br><br>
 	
 		Year of PG:
-		<input type="text" name="pgyear"/>
+		<input type="number" name="pgyear"/>
 		<br><br>
 		
 		CGPA or Marks:
-		<input type="radio" name="pgcgpa" value="pggpa">CGPA 
+		<input type="radio" name="pgcgpa" value="pggpa" checked>CGPA 
 		<input type="number" name="pgcgpa">
 		<select name="total1">
 			<option value="4">4</option>
@@ -343,7 +456,7 @@ function validate()
 		<br><br>
 		
 		Year:
-		<input type="text" name="oadyear"/>
+		<input type="number" name="oadyear"/>
 		<br><br>
 	
 		Score:
@@ -388,11 +501,15 @@ function validate()
 	<br><br>
 	
 	CV/Resume:
+	<input type="file" name="cv" required/>
 	<br><br>
 	
 	SOP:
+	<input type="file" name="sop" required/>
 	<br><br>
 	
    <button type="submit">Submit</button>
    
 </form>
+
+<a href="success">Proceed</a>

@@ -73,8 +73,8 @@ public class Routes extends HttpServlet {
 			request.setAttribute("title", "New App");
 			request.setAttribute("view", "./../views/application.jsp");
 			ac.newApplicant(request, response);
-			request.setAttribute("title", "Complete!");
-			request.setAttribute("view", "./../views/success.jsp");
+			//request.setAttribute("title", "Complete!");
+			//request.setAttribute("view", "./../views/success.jsp");
 		}
 		
 		render(request, response);
