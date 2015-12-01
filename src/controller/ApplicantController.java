@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import model.Applicant;
+
 public class ApplicantController {
 	
 	public ApplicantController() {
@@ -14,6 +16,8 @@ public class ApplicantController {
 	}
 	
 	public void newApplicant(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		Applicant app = new Applicant();
 		
 		HttpSession session = request.getSession();
 		String name = request.getParameter("name").trim();
@@ -52,7 +56,7 @@ public class ApplicantController {
 		String gstate = request.getParameter("gstate").trim();
 		String gyear = request.getParameter("gyear").trim();
 		String a = request.getParameter("cgpa").trim();
-		String gcgpa;
+		String gcgpa = "null";
 		Float temp;
 		if(a.equals("marks")) {
 			gcgpa = request.getParameter("gmarks").trim();
@@ -77,7 +81,7 @@ public class ApplicantController {
 		
 		String x1 = request.getParameter("ece");
 		String ecepref1, ecepref2, ecepref3, ecepref4, eceyn;
-		if(x1.equals("ecephd")) {
+		if(!(x1 == null)) {
 			eceyn = "Yes";
 			ecepref1 = request.getParameter("ecepref1");
 			ecepref2 = request.getParameter("ecepref2");
@@ -94,7 +98,9 @@ public class ApplicantController {
 		
 		String x2 = request.getParameter("pg");
 		String pgcoll, pgcity, pgstate, pgdept, pgdegree, pgthesis, pgyear, pgcgpa, pgyn;
-		if(x2.equals("pg")) {
+		pgcgpa = "null";
+		System.out.println(x2);
+		if(!(x2 == null)) {
 			pgyn = "Yes";
 			pgcoll = request.getParameter("pgcoll");
 			pgcity = request.getParameter("pgcity");
@@ -142,7 +148,7 @@ public class ApplicantController {
 		
 		String oadname, oadsub, oadyear, oadscore, oadrank, oadyn;
 		
-		if(x3.equals("oad")) {
+		if(!(x3 == null)) {
 			oadyn = "Yes";
 			oadname = request.getParameter("oadname");
 			oadsub = request.getParameter("oadsub");
@@ -163,7 +169,7 @@ public class ApplicantController {
 		
 		String x4 = request.getParameter("gate");
 		
-		if(x4.equals("gate")) {
+		if(!(x4 == null)) {
 			gateyn = "Yes";
 			gatearea = request.getParameter("gatearea");
 			gateyear = request.getParameter("gateyear");
@@ -179,6 +185,12 @@ public class ApplicantController {
 			gatescore = "null";
 			gaterank = "null";
 		}
+		
+		String achievements = request.getParameter("achievements").trim();
+		
+		app.savePage1values(email, name, eno, add, mobile, phdstream, phdpref1, phdpref2, phdpref3, gender, category, phy, dob, war, father, nationality, peradd, pin);
+ 		app.savePage2values(xboard, xmarks, xyear, xiiboard, xiimarks, xiiyear, gdegree, gdept, gcoll, guni, gcity, gstate, gyear, gcgpa, ecepref1, ecepref2, ecepref3, ecepref4, pgcoll, pgcity, pgstate, pgdept, pgdegree, pgthesis, pgyear, pgcgpa, oadname, oadsub, oadyear, oadscore, oadrank, gatearea, gateyear, gatemarks, gatescore, gaterank, achievements, eceyn, pgyn, oadyn, gateyn);
+		app.writeDatatoFile(app);
  		//System.out.println(x);
 	}
 }

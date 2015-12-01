@@ -14,12 +14,8 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Random;
 
-public class Applicant implements Serializable{
+public class Applicant implements Serializable {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	//Personal Information
 	private String e_id;
 	private String email;
@@ -63,12 +59,14 @@ public class Applicant implements Serializable{
 	
 	
 	//ECE PhD
+	private String e_selected;
 	private String e_pref1;
 	private String e_pref2;
 	private String e_pref3;
 	private String e_pref4;
 	
 	//Post Grad Information
+	private String pg_selected;
 	private String pg_name;
 	private String pg_city;
 	private String pg_state;
@@ -79,6 +77,7 @@ public class Applicant implements Serializable{
 	private String pg_cgpa;
 	
 	//Other Academic Degrees
+	private String other_selected;
 	private String other_exam_name;
 	private String other_sub;
 	private String other_year;
@@ -86,6 +85,7 @@ public class Applicant implements Serializable{
 	private String other_rank;
 	
 	//GATE
+	private String gate_selected;
 	private String gate_area;
 	private String gate_year;
 	private String gate_marks;
@@ -561,6 +561,38 @@ public class Applicant implements Serializable{
 		return this.sop;
 	}
 	
+	public void setE_sel(String a) {
+		this.e_selected = a;
+	}
+	
+	public String getE_sel() {
+		return this.e_selected;
+	}
+	
+	public void setPG_sel(String a) {
+		this.pg_selected = a;
+	}
+	
+	public String getPG_sel() {
+		return this.pg_selected;
+	}
+	
+	public void setGATE_sel(String a) {
+		this.gate_selected = a;
+	}
+	
+	public String getGATE_sel() {
+		return this.gate_selected;
+	}
+	
+	public void setOther_sel(String a) {
+		this.other_selected = a;
+	}
+	
+	public String getOther_sel() {
+		return this.other_selected;
+	}
+	
 	public void savePage1values(String b1, String b2, String b3, String b4, String b5, String b6, String b7, String b8, String b9, String b10, String b11, String b12, String b13, String b14, String b15, String b16, String b17, String b18) {
 		//System.out.println("BABABABABAA");
 		Random rand = new Random();
@@ -587,7 +619,7 @@ public class Applicant implements Serializable{
 		this.setPin(b18);
 	}
 	
-	public void savePage2values(String b1, String b2, String b3, String b4, String b5, String b6, String b7, String b8, String b9, String b10, String b11, String b12, String b13, String b14, String b15, String b16, String b17, String b18, String b19, String b20, String b21, String b22, String b23, String b24, String b25, String b26, String b27, String b28, String b29, String b30, String b31, String b32, String b33, String b34, String b35, String b36, String b37) {
+	public void savePage2values(String b1, String b2, String b3, String b4, String b5, String b6, String b7, String b8, String b9, String b10, String b11, String b12, String b13, String b14, String b15, String b16, String b17, String b18, String b19, String b20, String b21, String b22, String b23, String b24, String b25, String b26, String b27, String b28, String b29, String b30, String b31, String b32, String b33, String b34, String b35, String b36, String b37, String x1, String x2, String x3, String x4) {
 		this.setAchievements(b37);
 		this.setGATE_rank(b36);
 		this.setGATE_score(b35);
@@ -625,18 +657,25 @@ public class Applicant implements Serializable{
 		this.setXYear(b3);
 		this.setXMarks(b2);
 		this.setXBoard(b1);
+		this.setE_sel(x1);
+		this.setPG_sel(x2);
+		this.setOther_sel(x3);
+		this.setGATE_sel(x4);
 	}
 	
 	public void writeDatatoFile(Applicant a) {
 		BufferedWriter w = null;
 		java.util.Date date= new java.util.Date();
 		Timestamp time = new Timestamp(date.getTime());
+		
 		String current_time = time.toString();
+		String[] blah = current_time.split(" ");
+		current_time = blah[0];
 		try {
-			w = new BufferedWriter(new FileWriter("./Data/data.csv", true));
-			w.write(current_time + ",");
+			w = new BufferedWriter(new FileWriter("/Users/shantanujain/Documents/project/Project/db/Data.csv", true));
+			//w.write(current_time + ",");
 			//w.write(new Timestamp(date.getTime()));
-			w.write(a.getEmail() + "," + a.getName() + "," + a.getEno() + "," + a.getAdd_corr() + "," + a.getMobile() + "," + a.getPhDStream() + "," + a.getArea_pref1() + "," + a.getArea_pref2() + "," + a.getArea_pref3() + "," + a.getGender() + "," + a.getCategory() + "," + a.getPhy_dis() + "," + a.getDOB() + "," + a.getWar() + "," + a.getFather_name() + "," + a.getNationality() + "," + a.getPer_add() + "," + a.getPin() + "," + a.getXBoard() + "," + a.getXMarks() + "," + a.getXYear() + "," + a.getXIIBoard() + "," + a.getXIIMarks() + "," + a.getXIIYear() + "," + a.getG_Degree() + "," + a.getG_Dept() + "," + a.getG_Coll() + "," + a.getG_Uni() + "," + a.getG_City() + "," + a.getG_State() + "," + a.getG_year() + "," + a.getG_CGPA() + "," + a.getE_pref1() + "," + a.getE_pref2() + "," + a.getE_pref3() + "," + a.getE_pref4() + "," + a.getPG_name() + "," + a.getPG_city() + "," + a.getPG_state() + "," + a.getPG_dept() + "," + a.getPG_degree() + "," + a.getPG_thesis() + "," + a.getPG_year() + "," + a.getPG_cgpa() + "," + a.getOther_name() + "," + a.getOther_sub() + "," + a.getOther_year() + "," + a.getOther_score() + "," + a.getOther_rank() + "," + a.getGATE_area() + "," + a.getGATE_year() + "," + a.getGATE_marks() + "," + a.getGATE_score() + "," + a.getGATE_rank() + "," + a.getAchievements());
+			w.write(a.getEmail() + "," + a.getName() + "," + a.getAdd_corr() + "," + a.getMobile() + "," + a.getPhDStream() + "," + a.getArea_pref1() + "," + a.getArea_pref2() + "," + a.getArea_pref3() + "," + a.getGender() + "," + a.getCategory() + "," + a.getPhy_dis() + "," + a.getDOB() + "," + a.getWar() + "," + a.getFather_name() + "," + a.getNationality() + "," + a.getPer_add() + "," + a.getPin() + "," + a.getXBoard() + "," + a.getXMarks() + "," + a.getXYear() + "," + a.getXIIBoard() + "," + a.getXIIMarks() + "," + a.getXIIYear() + "," + a.getG_Degree() + "," + a.getG_Dept() + "," + a.getG_Coll() + "," + a.getG_Uni() + "," + a.getG_City() + "," + a.getG_State() + "," + a.getG_year() + "," + a.getG_CGPA() + "," + a.getE_sel() + "," + a.getE_pref1() + "," + a.getE_pref2() + "," + a.getE_pref3() + "," + a.getE_pref4() + "," + a.getPG_sel() + "," + a.getPG_name() + "," + a.getPG_city() + "," + a.getPG_state() + "," + a.getPG_dept() + "," + a.getPG_degree() + "," + a.getPG_thesis() + "," + a.getPG_year() + "," + a.getPG_cgpa() + "," + a.getOther_sel() + "," + a.getOther_name() + "," + a.getOther_sub() + "," + a.getOther_year() + "," + a.getOther_score() + "," + a.getOther_rank() + "," + a.getGATE_sel() + "," + a.getGATE_area() + "," + a.getGATE_year() + "," + a.getGATE_marks() + "," + a.getGATE_score() + "," + a.getGATE_rank() + "," + a.getAchievements() + "," + current_time + "," + a.getEno());
 			w.newLine();
 			//FileOutputStream fout = new FileOutputStream("./src/d.txt", true);
 			//ObjectOutputStream oos = new ObjectOutputStream(fout); 
