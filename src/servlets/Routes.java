@@ -29,7 +29,7 @@ public class Routes extends HttpServlet {
     }
     
     public void render(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		rd = request.getRequestDispatcher("./layouts/application.jsp");
+		rd = request.getRequestDispatcher("./layouts/layout.jsp");
 		rd.forward(request, response);
 	}
 
