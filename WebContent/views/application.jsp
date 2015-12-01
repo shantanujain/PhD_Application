@@ -106,53 +106,53 @@ function validate()
 	<textarea rows="5" cols="20" name="address" required></textarea>
 	<br><br>
 	Mobile:
-	<input type="text" name="mobile" required/>
+	<input type="number" name="mobile" required/>
 	<br><br>
 	PhD Stream:
-	<input type="radio" name="stream" value="cse"> Computer Science 
-	<input type="radio" name="stream" value="ece"> Electronics and Communication
-	<input type="radio" name="stream" value="cb"> Computational Biology
+	<input type="radio" name="stream" value="Computer Science"> Computer Science 
+	<input type="radio" name="stream" value="Electronics and Communication"> Electronics and Communication
+	<input type="radio" name="stream" value="Computational Biology"> Computational Biology
 	<br><br>
 	<%-- Preference 1, 2, 3 --%>
 	Preference 1:
 	<select name="pref1">
-		<option value="1">Machine Learning</option>
-		<option value="2">Mobile Computing</option>
+		<option value="Machine Learning">Machine Learning</option>
+		<option value="Mobile Computing">Mobile Computing</option>
 	</select>
 	<br><br>
 	Preference 2:
 	<select name="pref2">
-		<option value="1">Machine Learning</option>
-		<option value="2">Mobile Computing</option>
+		<option value="Machine Learning">Machine Learning</option>
+		<option value="Mobile Computing">Mobile Computing</option>
 	</select>
 	<br><br>
 	Preference 3:
 	<select name="pref3">
-		<option value="1">Machine Learning</option>
-		<option value="2">Mobile Computing</option>
+		<option value="Machine Learning">Machine Learning</option>
+		<option value="Mobile Computing">Mobile Computing</option>
 	</select>
 	<br><br>
 	Gender:
-	<input type="radio" name="gender" value="male"> Male
-	<input type="radio" name="gender" value="female"> Female
+	<input type="radio" name="gender" value="Male"> Male
+	<input type="radio" name="gender" value="Female"> Female
 	<br><br>
 	Category:
-	<input type="radio" name="category" value="general"> General 
-	<input type="radio" name="category" value="sc"> SC
-	<input type="radio" name="category" value="st"> ST
-	<input type="radio" name="category" value="obc"> OBC
+	<input type="radio" name="category" value="General"> General 
+	<input type="radio" name="category" value="SC"> SC
+	<input type="radio" name="category" value="ST"> ST
+	<input type="radio" name="category" value="OBC"> OBC
 	<br><br>
 	Physically Disable:
-	<input type="radio" name="physical" value="yes"> Yes 
-	<input type="radio" name="physical" value="no"> No
+	<input type="radio" name="physical" value="Yes"> Yes 
+	<input type="radio" name="physical" value="No"> No
 	<br><br>
 	<%-- DOB --%>
 	Date of Birth:
 	<input type="date" id="dob" name="dob" required/>
 	<br><br>
 	Children/War Widows of Defence Personnel killed/Disabled in Action:
-	<input type="radio" name="war" value="yes"> Yes 
-	<input type="radio" name="war" value="no"> No
+	<input type="radio" name="war" value="Yes"> Yes 
+	<input type="radio" name="war" value="No"> No
 	<br><br>
 	Father's Name:
 	<input type="text" name="father" required/>
@@ -162,10 +162,10 @@ function validate()
 	<input type="text" name="nationality">
 	<br><br>
 	Permanent Address:<br>
-	<textarea rows="5" cols="20" name="address" required></textarea>
+	<textarea rows="5" cols="20" name="peraddress" required></textarea>
 	<br><br>
 	Pin Code:
-	<input type="text" name="pin" required/>
+	<input type="number" name="pin" required/>
 	<br><br>
 	
 	<%-- Educational Information --%>
@@ -181,7 +181,7 @@ function validate()
 	<br><br>
 	
 	Year of Passing Xth:
-	<input type="text" name="xyear" required/>
+	<input type="number" name="xyear" required/>
 	<br><br>
 	
 	XIIth Board:
@@ -193,7 +193,7 @@ function validate()
 	<br><br>
 	
 	Year of Passing XIIth:
-	<input type="text" name="xiiyear" required/>
+	<input type="number" name="xiiyear" required/>
 	<br><br>
 	
 	<h3>Graduation Information</h3>
@@ -223,18 +223,19 @@ function validate()
 	<br><br>
 	
 	Year of Graduation:
-	<input type="text" name="gyear" required/>
+	<input type="number" name="gyear" required/>
 	<br><br>
 	
 	CGPA or Marks:
 	<input type="radio" name="cgpa" value="gpa">CGPA 
+	<input type="number" name="gcgpa" />
 	<select name="total">
 		<option value="4">4</option>
 		<option value="10">10</option>
 	</select>
 	
 	<input type="radio" name="cgpa" value="marks">Marks
-	<input type="text" name="gmarks" />
+	<input type="number" name="gmarks" />
 	<br><br>
 	
 	<input type="checkbox" name="ece" id="eceCheck" value="ecephd" onclick="displayECE()">Are you applying for ECE PhD?
@@ -243,42 +244,42 @@ function validate()
 		<h2>ECE PhD Subject Preference</h2>
 		Preference 1:
 		<select name="ecepref1">
-			<option value="1">Advanced Signal Processing</option>
-			<option value="2">Statistical Signal Processing</option>
-			<option value="3">Digital VLSI Design</option>
-			<option value="4">Analog CMOS Design</option>
-			<option value="5">Digital Communications</option>
-			<option value="6">Communication Networks</option>
+			<option value="Advanced Signal Processing">Advanced Signal Processing</option>
+			<option value="Statistical Signal Processing">Statistical Signal Processing</option>
+			<option value="Digital VLSI Design">Digital VLSI Design</option>
+			<option value="Analog CMOS Design">Analog CMOS Design</option>
+			<option value="Digital Communications">Digital Communications</option>
+			<option value="Communication Networks">Communication Networks</option>
 		</select>
 		<br/><br/>
 		Preference 2:
 		<select name="ecepref2">
-			<option value="1">Advanced Signal Processing</option>
-			<option value="2">Statistical Signal Processing</option>
-			<option value="3">Digital VLSI Design</option>
-			<option value="4">Analog CMOS Design</option>
-			<option value="5">Digital Communications</option>
-			<option value="6">Communication Networks</option>
+			<option value="Advanced Signal Processing">Advanced Signal Processing</option>
+			<option value="Statistical Signal Processing">Statistical Signal Processing</option>
+			<option value="Digital VLSI Design">Digital VLSI Design</option>
+			<option value="Analog CMOS Design">Analog CMOS Design</option>
+			<option value="Digital Communications">Digital Communications</option>
+			<option value="Communication Networks">Communication Networks</option>
 		</select>
 		<br/><br/>
 		Preference 3:
 		<select name="ecepref3">
-			<option value="1">Advanced Signal Processing</option>
-			<option value="2">Statistical Signal Processing</option>
-			<option value="3">Digital VLSI Design</option>
-			<option value="4">Analog CMOS Design</option>
-			<option value="5">Digital Communications</option>
-			<option value="6">Communication Networks</option>
+			<option value="Advanced Signal Processing">Advanced Signal Processing</option>
+			<option value="Statistical Signal Processing">Statistical Signal Processing</option>
+			<option value="Digital VLSI Design">Digital VLSI Design</option>
+			<option value="Analog CMOS Design">Analog CMOS Design</option>
+			<option value="Digital Communications">Digital Communications</option>
+			<option value="Communication Networks">Communication Networks</option>
 		</select>
 		<br/><br/>
 		Preference 4:
 		<select name="ecepref4">
-			<option value="1">Advanced Signal Processing</option>
-			<option value="2">Statistical Signal Processing</option>
-			<option value="3">Digital VLSI Design</option>
-			<option value="4">Analog CMOS Design</option>
-			<option value="5">Digital Communications</option>
-			<option value="6">Communication Networks</option>
+			<option value="Advanced Signal Processing">Advanced Signal Processing</option>
+			<option value="Statistical Signal Processing">Statistical Signal Processing</option>
+			<option value="Digital VLSI Design">Digital VLSI Design</option>
+			<option value="Analog CMOS Design">Analog CMOS Design</option>
+			<option value="Digital Communications">Digital Communications</option>
+			<option value="Communication Networks">Communication Networks</option>
 		</select>
 		<br/><br/>
 	</div>
@@ -289,7 +290,7 @@ function validate()
 	<div id="pg" style="display:none">
 		<h2>Post Graduation Information</h2>
 		Name of College:
-		<input type="text" name="pgcoll"/>
+		<input type="text" name="pgcoll" required/>
 		<br><br>
 		
 		City:
@@ -318,12 +319,13 @@ function validate()
 		
 		CGPA or Marks:
 		<input type="radio" name="pgcgpa" value="pggpa">CGPA 
-		<select name="total">
+		<input type="number" name="pgcgpa">
+		<select name="total1">
 			<option value="4">4</option>
 			<option value="10">10</option>
 		</select>
 		<input type="radio" name="pgcgpa" value="marks">Marks
-		<input type="text" name="pgmarks" />
+		<input type="number" name="pgmarks" />
 		<br><br>
 	</div>
 	
@@ -363,19 +365,19 @@ function validate()
 		<br><br>
 		
 		Year:
-		<input type="text" name="gateyear"/>
+		<input type="number" name="gateyear"/>
 		<br><br>
 		
 		Marks(out of 100):
-		<input type="text" name="gatemarks"/>
+		<input type="number" name="gatemarks"/>
 		<br><br>
 	
 		Score:
-		<input type="text" name="gatescore"/>
+		<input type="number" name="gatescore"/>
 		<br><br>
 	
 		Rank:
-		<input type="text" name="gaterank"/>
+		<input type="number" name="gaterank"/>
 		<br><br>
 	</div>
 	
