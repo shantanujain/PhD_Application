@@ -24,7 +24,7 @@ import pack.Controller;
 /**
  * Servlet implementation class Routes
  */
-@WebServlet({"/Routes", "/", "/home", "/new", "/admin", "/success"})
+@WebServlet({"/Routes", "/", "/home", "/new", "/admin", "/success", "/data"})
 public class Routes extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	RequestDispatcher rd;
@@ -77,6 +77,18 @@ public class Routes extends HttpServlet {
 			//HttpSession session = request.getSession();
 			request.setAttribute("title", "Filtered Results");
 			request.setAttribute("view", "./../views/results.jsp");
+			request.setAttribute("applicant", cunt);
+			
+			//request.setAttribute("title", "Filtered Results");
+			//request.setAttribute("view", "./../views/results.jsp");
+			
+		}
+		
+		if(request.getRequestURI().equals("/Project/data")) {
+			//response.setContentType("text/html");
+			//HttpSession session = request.getSession();
+			request.setAttribute("title", "Data");
+			request.setAttribute("view", "./../views/data.jsp");
 			request.setAttribute("applicant", cunt);
 			
 			//request.setAttribute("title", "Filtered Results");

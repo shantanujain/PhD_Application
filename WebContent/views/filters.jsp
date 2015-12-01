@@ -91,7 +91,7 @@
 		<option value="Delhi">Delhi</option>
 		<option value="Mumbai">Mumbai</option>
 		<option value="Andhra Pradesh">Andhra Pradesh</option>
-		<option value="Jharkhand">Jharkhan</option>
+		<option value="Jharkhand">Jharkhand</option>
 		<option value="Karnataka">Karnataka</option>
 		<option value="Madhya Pradesh">Madhya Pradesh</option>
 		<option value="Maharashtra">Maharashtra</option>
@@ -106,7 +106,7 @@
 		<option value="Delhi">Delhi</option>
 		<option value="Mumbai">Mumbai</option>
 		<option value="Andhra Pradesh">Andhra Pradesh</option>
-		<option value="Jharkhand">Jharkhan</option>
+		<option value="Jharkhand">Jharkhand</option>
 		<option value="Karnataka">Karnataka</option>
 		<option value="Madhya Pradesh">Madhya Pradesh</option>
 		<option value="Maharashtra">Maharashtra</option>
@@ -144,9 +144,10 @@
 	<br><br>
 	<input type="radio" name="apptime1" value="to">Application dated to: <input type="date" name="dateto">
 	<br><br>
-	<button type="submit">Show filtered result</button>
+	<button type="submit">Filter</button>
 	<br>
 </form>
 	<a href="results">Show filtered results</a>
+	<a href="home">Back</a>
 </body>
 </html>

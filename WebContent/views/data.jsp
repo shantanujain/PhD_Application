@@ -1,0 +1,1 @@
+<jsp:useBean id="applicant" scope="request" type="pack.Applicant" />

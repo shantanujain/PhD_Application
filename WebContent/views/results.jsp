@@ -10,22 +10,28 @@ th, td {
 }
 </style>
 
-<form method="post">
+
 
 <h1><center>Filtered Results</center></h1>
-
+<br><br>
+<h4><center>Count:<%= applicant.finalarr.size() %></center></h4>
+<br><br>
 <table style="width:100%">
 	<tr>
 		<th>Enrollment Number</th>
 		<th>Name</th>
+		
 	</tr>
 	<% for (pack.Applicant app : applicant.finalarr) { %>
 	<tr>
 		<td><center><%= app.getEno() %></center></td>
 		<td><center><%= app.getName() %></center></td>
+		
 	</tr>
 	<% } %>
 
 </table>
 
-</form>
+
+
+<a href="home">Back</a>

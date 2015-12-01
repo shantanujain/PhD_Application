@@ -513,3 +513,4 @@ function validate()
 </form>
 
 <a href="success">Proceed</a>
+<a href="home">Back</a>
